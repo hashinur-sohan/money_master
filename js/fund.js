@@ -11,7 +11,6 @@ document.getElementById('calculation-button').addEventListener('click', function
     const rentInput = callingByIdName('rent-input');
     const clothInput = callingByIdName('cloth-input');
 
-
     if (incomeInput <= 0 || isNaN(incomeInput)) {
         alert("Negative number or empty value or string not allowed...! ");
     }
@@ -48,7 +47,6 @@ document.getElementById('calculation-button').addEventListener('click', function
 })
 
 // svaing amount calculation function
-
 document.getElementById('save-button').addEventListener('click', function () {
     // function calling
     const incomeInput = callingByIdName('income-input');
@@ -60,9 +58,6 @@ document.getElementById('save-button').addEventListener('click', function () {
     const getSaveInput = document.getElementById('save-input');
     const saveInputText = getSaveInput.value;
     const saveInput = parseFloat(saveInputText);
-
-
-
     // calculation total expences
     const totalExpences = foodInput + rentInput + clothInput;
     // Balance
