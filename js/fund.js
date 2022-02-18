@@ -4,7 +4,6 @@ function callingByIdName(call) {
     const output = parseFloat(ipnutText)
     return output;
 }
-
 document.getElementById('calculation-button').addEventListener('click', function () {
     //    calling function
     const incomeInput = callingByIdName('income-input');
@@ -47,7 +46,6 @@ document.getElementById('calculation-button').addEventListener('click', function
     }
 
 })
-
 
 // svaing amount calculation function
 
