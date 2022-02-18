@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funds Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="border-4 border-solid border-slate-400 rounded ">
+    <header class="mt-10 mb-10">
+        <h1 class="text-5xl font-samibold text-center">Funds Manager</h1>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <div class="grid grid-cols-2 ">
+
+                <!-- image side -->
+
+                <div class="mb-10 ml-10 mr-10 ">
+                    <img class="" src="style/image/pic.jpg" alt="">
+                </div>
+
+                <!-- calculation part -->
+
+                <div class="grid auto-rows-auto justify-center border-2 border-solid bg-slate-300 mb-10 ml-10 mr-10">
+                    <div>
+                        <!-- Income heading  -->
+                        <div class="mb-2 mt-10 ">
+                            <h3 class="grid justify-center font-bold">Income</h3>
+                        </div>
+                        <!-- income -->
+                        <div class="mb-2 text-xs">
+                            <span class="mr-2 ">Income</span><input class="rounded" type="text" name=""
+                                id="income-input">
+                        </div>
+                        <!-- Expenses heding -->
+                        <div class="mb-2">
+                            <h3 class="grid justify-center font-bold">Expenses</h3>
+                        </div>
+                        <!-- Food -->
+                        <div class="mb-2 text-xs">
+                            <span class="mr-5">Food </span><input class="rounded" type=" text" name="" id="food-input">
+                        </div>
+                        <!-- Rent -->
+                        <div class="mb-2 text-xs">
+                            <span class="mr-6">Rent </span><input class="rounded" type=" text" name="" id="rent-input">
+                        </div>
+                        <!-- Cloth -->
+                        <div class="mb-2 text-xs">
+                            <span class="mr-5">Cloth </span><input class="rounded" type=" text" name=""
+                                id="cloth-input">
+                        </div>
+                        <!-- Calculate -->
+                        <button id="calculation-button" class="bg-blue-600 px-7 mt-2  ml-16 rounded">Calculate</button>
+                        <!-- Total Expenses -->
+                        <div class="text-center mt-4 font-bold">
+                            <h3>Total Expenses: <span id="total-expenses">00</span></h3>
+                        </div>
+                        <!-- Balance -->
+                        <div class="text-center  font-bold">
+                            <h3 class="">Balance: <span id="balance">00</span></h3>
+                        </div>
+                        <!-- Save amount calculation, % and button-->
+                        <div class="text-center text-xs  mt-3">
+                            <span class="mr-2">Save:</span> <input class="rounded w-14 mr-4 text-lime-500" type="text"
+                                name="" id="save-input">
+                            <span class="mr-4">%</span>
+                            <!-- SAVING % button -->
+                            <button id="save-button" class="bg-blue-600 px-5 rounded  text-white ">Save</button>
+                        </div>
+                        <!-- Saving Amount -->
+                        <div class="text-center mt-3 font-bold">
+                            <h3 class="">Saving Amount: <span id="save-amount">00</span></h3>
+                        </div>
+                        <!-- Remaining Balance -->
+                        <div class="text-center font-bold">
+                            <h3 class=""> Remaining Balance: <span id="remaining-balance">00</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+    </main>
+    <script>
+
+
+    </script>
+    <script src="js/fund.js"></script>
+</body>
+
+</html>
